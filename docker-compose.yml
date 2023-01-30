@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  web:
+    container_name: accounting_frontend_dev_web
+    build:
+      context: ./src
+      dockerfile: ..clear/conf/Dockerfile
+    ports:
+      - "3001:3000"
